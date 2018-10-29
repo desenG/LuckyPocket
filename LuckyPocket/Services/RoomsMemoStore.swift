@@ -12,8 +12,8 @@ class RoomsMemStore: RoomsStoreProtocol
     // MARK: - Data
     
     static var rooms = [
-        Room(name:"Room1"),
-        Room(name:"Room2"),
+        Room(),
+        Room(),
     ]
     // MARK: - CRUD operations - Optional error
     func fetchRooms(completionHandler: @escaping ([Room], RoomsStoreError?) -> Void) {

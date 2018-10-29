@@ -16,11 +16,10 @@ enum RoomType
 }
 
 struct Room: Equatable{
-    var uuid: String
-    var name: String
-    var members: [Member]=[]
-    var owner: Member
-    var type: RoomType = RoomType.Public
+    var name: String?
+    var members: [Member]?
+    var owner: Member?
+    var type: RoomType? = RoomType.Public
     var image: UIImage?
     var LastMessage: String?
     var MessagedAt: Date?

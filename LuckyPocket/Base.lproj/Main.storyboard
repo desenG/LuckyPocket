@@ -20,7 +20,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q20-i3-Mzu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.99853267766497467" green="0.99853267766497467" blue="0.99853267766497467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
@@ -41,11 +40,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GQD-Jo-5tW">
-                                <rect key="frame" x="0.0" y="64" width="375" height="163"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GQD-Jo-5tW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请发邀请      &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="bOA-Jj-f0D">
-                                    <rect key="frame" x="0.0" y="72" width="375" height="21"/>
+                                    <rect key="frame" x="0.0" y="72" width="375" height="98"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.28957066092054851" green="0.33616372585507659" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,13 +90,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="irf-3j-cEt" firstAttribute="bottom" secondItem="GQD-Jo-5tW" secondAttribute="bottom" id="6PF-qw-wnB"/>
+                            <constraint firstItem="irf-3j-cEt" firstAttribute="bottom" secondItem="GQD-Jo-5tW" secondAttribute="bottom" id="6PF-qw-wnB" userLabel="Table View.bottom = bottom"/>
+                            <constraint firstItem="GQD-Jo-5tW" firstAttribute="trailing" secondItem="irf-3j-cEt" secondAttribute="trailing" id="ENh-si-wav" userLabel="Table View.trailing = trailing"/>
+                            <constraint firstItem="GQD-Jo-5tW" firstAttribute="leading" secondItem="irf-3j-cEt" secondAttribute="leading" id="Tvp-0Q-7eg" userLabel="Table View.leading = leading"/>
+                            <constraint firstItem="GQD-Jo-5tW" firstAttribute="top" secondItem="irf-3j-cEt" secondAttribute="top" id="dmW-eZ-G6O" userLabel="Table View.top = top"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="irf-3j-cEt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="大厅" id="EaU-1M-V7a">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="v5k-hi-wbJ" userLabel="item"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="uz4-e4-yzK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HKC-E4-8eQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +182,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t5q-lF-fLs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="G4M-tN-jj6" kind="presentation" id="79e-SY-xX2"/>
@@ -328,7 +329,9 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="5vy-ad-k2K"/>
+                    <navigationItem key="navigationItem" id="5vy-ad-k2K">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="6ah-Np-F81"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -353,7 +356,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DPg-1g-1TC">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
@@ -390,7 +392,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xjK-6k-QdU">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
@@ -427,7 +428,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ml-Do-Syk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
